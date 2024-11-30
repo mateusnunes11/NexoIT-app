@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# NexoIT - Projeto Integrador IV - B
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto tem como objetivo o desenvolvimento de uma plataforma para gerenciamento de **projetos** e **tarefas**, utilizando React para o front-end e integrando funcionalidades como adição, exclusão e acompanhamento de status.
 
-## Available Scripts
+## Descrição
 
-In the project directory, you can run:
+A aplicação possui duas principais funcionalidades:
 
-### `npm start`
+1. **Gerenciamento de Projetos**:
+   - Visualização de projetos com detalhes como nome, descrição e status.
+   - Possibilidade de adicionar novos projetos e excluir os existentes.
+   - Status do projeto (Em andamento, Concluído, Pendente) com diferentes cores de destaque.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Gerenciamento de Tarefas**:
+   - Exibição de uma lista de tarefas com título, descrição e status.
+   - Funcionalidade de adicionar novas tarefas e excluí-las.
+   - Status da tarefa com diferentes cores (Em progresso, Pendente, Concluído).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Como Rodar o Projeto
 
-### `npm test`
+### Pré-requisitos
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js** (recomendado a versão 16 ou superior)
+- **npm** (gerenciador de pacotes do Node.js)
 
-### `npm run build`
+### Passos
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clonar o repositório**:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   Primeiro, clone o repositório em sua máquina:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/mateusnunes11/NexoIT.git
+   cd NexoIT
 
-### `npm run eject`
+ Instalar dependências:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Em seguida, instale as dependências do projeto com o comando npm:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Após a instalação, inicie o servidor de desenvolvimento:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+npm start
 
-## Learn More
+Estrutura do Projeto:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+src/components/Projects.js: Componente para gerenciamento de projetos.
+src/components/Task.js: Componente para gerenciamento de tarefas.
+src/styles/projects.css: Estilos para o gerenciamento de projetos.
+src/styles/task.css: Estilos para o gerenciamento de tarefas.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Funcionalidades:
 
-### Code Splitting
+1. Gerenciamento de Projetos:
+Adicionar um novo projeto (nome, descrição, status).
+Excluir projetos existentes.
+Alteração de status do projeto (Em andamento, Concluído, Pendente) com diferentes cores.
+2. Gerenciamento de Tarefas:
+Adicionar uma nova tarefa (título, descrição, status).
+Excluir tarefas existentes.
+Alteração de status da tarefa (Em progresso, Concluído, Pendente) com cores específicas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Como Testar:
 
-### Analyzing the Bundle Size
+Adicionar um Projeto:
+Clique no botão "Adicionar Projeto" para abrir o formulário.
+Preencha o nome, descrição e selecione o status.
+Clique em "Adicionar" para adicionar o projeto à lista.
+Excluir um Projeto:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Clique no botão "Excluir" ao lado de qualquer projeto para removê-lo da lista.
+Adicionar uma Tarefa:
 
-### Making a Progressive Web App
+Adicione tarefas com título, descrição e status similar ao processo de adicionar um projeto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Excluir uma Tarefa:
 
-### Advanced Configuration
+Exclua tarefas clicando no botão "Excluir" próximo à tarefa desejada.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Tecnologias Utilizadas:
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+React: Para o desenvolvimento da interface de usuário.
+CSS: Para estilização da interface.
+Git: Para controle de versão e gerenciamento do código.
